@@ -14,7 +14,7 @@
 <body class="bi">
 	<div class="cen">
 		<h1><a class="back " href="welcome.html"><i class="fa-solid fa-arrow-left"></i></a></h1>
-		<button id="btn" class="eye"><span><i class="fa-solid fa-eye"></i></span></button>
+		<button  id="btn" class="eye" aria-label="Cambiar de color"><span><i class="fa-solid fa-eye"></i></span></button>
 	</div>
 
 
@@ -22,7 +22,7 @@
 		<!-- Primera Seccion -->
 		<section class="bg-card normal sec">
 			<div>
-				<h2 class="title"> Datos Personales </h2>
+				<legend class="title"> Datos Personales </legend>
 			</div>
 
 			<div>
@@ -33,36 +33,36 @@
 
 
 			<div>
-				<label class="parts">Contraseña: <span class="red">*</span></label>
-				<input type="password" id="Contraseña" placeholder="Contraseña" required>
+				<label for="Contraseña" class="parts">Contraseña: <span class="red">*</span></label>
+				<input type="password" id="Contraseña" name="Contraseña" placeholder="Contraseña" required>
 				<a class="just" target="black" href="detalles.html#contraseña">Justificacion</a>
 			</div>
 
 
 			<div>
-				<label class="parts">Repetir Contraseña: <span class="red">*</span></label>
-				<input type="password" id="Contraseña_r" placeholder="Contraseña" required>
+				<label for="Contraseña_r" class="parts">Repetir Contraseña: <span class="red">*</span></label>
+				<input type="password" id="Contraseña_r" name="Contraseña_r" placeholder="Contraseña" required>
 				<a class="just" target="black" href="detalles.html#Contraseña_r">Justificacion</a>
 			</div>
 
 
 			<div>
-				<label class="parts">Dirección: <span class="red">*</span></label>
-				<input type="text" id="direccion" placeholder="Direccion" required>
+				<label for="direccion" class="parts">Dirección: <span class="red">*</span></label>
+				<input type="text" id="direccion" name="direccion" placeholder="Direccion" required>
 				<a class="just" target="black" href="detalles.html#direccion">Justificacion</a>
 			</div>
 
 
 			<div>
-				<label class="parts">Ciudad: <span class="red">*</span></label>
-				<input type="text" id="ciudad" placeholder="Ciudad" required>
+				<label for="ciudad" class="parts">Ciudad: <span class="red">*</span></label>
+				<input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
 				<a class="just" target="black" href="detalles.html#ciudad">Justificacion</a>
 			</div>
 
 
 			<div>
-				<label class="parts">Provincia: <span class="red">*</span></label>
-				<input type="text" id="provincia" placeholder="Provincia" required>
+				<label for="provincia" class="parts">Provincia: <span class="red">*</span></label>
+				<input type="text" id="provincia" name="provincia" placeholder="Provincia" required>
 				<a class="just" target="black" href="detalles.html#provincia">Justificacion</a>
 			</div>
 		</section>

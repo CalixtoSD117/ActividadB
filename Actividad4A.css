@@ -1,0 +1,231 @@
+/* Importacion para una fuente de texto de Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bi {
+    background-color: rgb(248, 248, 248);
+}
+
+/*Estilos del Welcome*/
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-contain {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 40px;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #81abea;
+}
+
+.nav-item:hover {
+
+    background-color: rgb(243, 243, 243);
+    transition: all;
+    transition-duration: 1000ms;
+}
+
+
+
+/* reglas de estilos
+
+texto normal: font weight 400
+
+
+*/
+
+
+/*Estilos del formulario*/
+.back {
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.back:hover {
+    color: tomato;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+
+    margin-bottom: 20px;
+}
+
+.sub {
+    font-family: 'Poppins', sans-serif;
+
+    margin-bottom: 20px;
+}
+
+.normal {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.bg-card {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.sec input {
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+}
+
+.sec input:focus {
+    outline: 1px solid rgb(206, 206, 206);
+}
+
+.sec a {
+    text-decoration: none;
+    color: rgb(52, 124, 233);
+}
+
+.red {
+    color: rgb(232, 78, 78);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.just {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(52, 124, 233);
+    font-weight: normal;
+}
+
+textarea {
+    border: 1px solid rgb(214, 214, 214);
+    width: 100%;
+    border-radius: 10px;
+}
+
+textarea:focus {
+    outline: 1px solid rgb(206, 206, 206);
+}
+
+.inpu {
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    padding: 4px;
+    padding-left: 15px;
+}
+
+.inpu:focus {
+    outline: 1px solid rgb(206, 206, 206);
+}
+
+.btn {
+    background-color: #00d184;
+    text-decoration: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    width: 85px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    background-color: #009d63;
+
+}
+
+.btn2 {
+    background-color: #e9e442;
+    text-decoration: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    width: 85px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.2s;
+
+}
+
+.btn2:hover {
+    background-color: #d1a400;
+
+}
+
+.cen {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.eye {
+    position: fixed;
+    display: flex;
+    margin: 0;
+    padding:0;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    right: 0;
+    color: #424242;
+    border-radius: 10px;
+    border: 0.5px solid rgb(240, 240, 240);
+    font-size: 18px;
+    padding: 4px;
+    transition: all;
+    transition-duration: 500ms;
+    cursor: pointer;
+
+}
+
+.eye:hover {
+    background: #424242;
+    color: #62aaf8;
+}

@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="icon" type="image/ico" href="https://img.freepik.com/vector-gratis/edificio-hotel-flat_23-2148162501.jpg?w=2000"
-	 alt="Icono de edificio de hotel">
+	<link rel="icon" type="image/ico" 
+	href="https://img.freepik.com/vector-gratis/edificio-hotel-flat_23-2148162501.jpg?w=2000">
 	<link rel="stylesheet" href="Actividad4A.css " id="style-sheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<title>Cuestionario</title>
@@ -13,7 +13,7 @@
 
 <body class="bi">
 	<div class="cen">
-		<h1><a class="back " href="welcome.html"><i class="fa-solid fa-arrow-left"></i></a></h1>
+		<span><a class="back " href="welcome.html"><i class="fa-solid fa-arrow-left"></i></a></span>
 		<button  id="btn" class="eye" aria-label="Cambiar de color"><span><i class="fa-solid fa-eye"></i></span></button>
 	</div>
 
@@ -22,48 +22,48 @@
 		<!-- Primera Seccion -->
 		<section class="bg-card normal sec">
 			<div>
-				<legend class="title"> Datos Personales </legend>
+				<h2 class="title"> Datos Personales </h2>
 			</div>
 
 			<div>
-				<label for="nombre"  class="parts">Nombre de usuario: <span class="red">*</span></label>
+				<label for="Nombre"  class="parts">Nombre de usuario: <span class="red">*</span></label>
 				<input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
-				<a class="just" target="black" href="detalles.html#nombredeusuario">Justificacion</a>
+				<a class="just" target="black" title="Justificacion del nombre de usuario" href="detalles.html#nombredeusuario">Justificacion</a>
 			</div>
 
 
 			<div>
 				<label for="Contraseña" class="parts">Contraseña: <span class="red">*</span></label>
 				<input type="password" id="Contraseña" name="Contraseña" placeholder="Contraseña" required>
-				<a class="just" target="black" href="detalles.html#contraseña">Justificacion</a>
+				<a class="just" target="black" title="Justificacion de la contraseña" href="detalles.html#contraseña">Justificacion</a>
 			</div>
 
 
 			<div>
 				<label for="Contraseña_r" class="parts">Repetir Contraseña: <span class="red">*</span></label>
 				<input type="password" id="Contraseña_r" name="Contraseña_r" placeholder="Contraseña" required>
-				<a class="just" target="black" href="detalles.html#Contraseña_r">Justificacion</a>
+				<a class="just" target="black" title="Justificacion de repetir contraseña" href="detalles.html#Contraseña_r">Justificacion</a>
 			</div>
 
 
 			<div>
 				<label for="direccion" class="parts">Dirección: <span class="red">*</span></label>
 				<input type="text" id="direccion" name="direccion" placeholder="Direccion" required>
-				<a class="just" target="black" href="detalles.html#direccion">Justificacion</a>
+				<a class="just" target="black" title="Justificacion de Direccion" href="detalles.html#direccion">Justificacion</a>
 			</div>
 
 
 			<div>
 				<label for="ciudad" class="parts">Ciudad: <span class="red">*</span></label>
 				<input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
-				<a class="just" target="black" href="detalles.html#ciudad">Justificacion</a>
+				<a class="just" target="black" title="Justificacion de ciudad" href="detalles.html#ciudad">Justificacion</a>
 			</div>
 
 
 			<div>
 				<label for="provincia" class="parts">Provincia: <span class="red">*</span></label>
 				<input type="text" id="provincia" name="provincia" placeholder="Provincia" required>
-				<a class="just" target="black" href="detalles.html#provincia">Justificacion</a>
+				<a class="just" target="black" title="Justificacion de provincia" href="detalles.html#provincia">Justificacion</a>
 			</div>
 		</section>
 		<!-- inicio de cantidad de personas -->
@@ -72,10 +72,10 @@
 				<h2 class="sub">Cantidad de Personas</h2>
 			</div>
 			<div>
-				<label class="normal">Numero de Huespedes: <span class="red">*</span><small>(minimo de personas 1
+				<label for="huespedes" class="normal">Numero de Huespedes: <span class="red">*</span><small>(minimo de personas 1
 						)</small></label>
-				<input type="text" id="huespedes" placeholder="N° Huespedes" required>
-				<a class="just" target="black" href="detalles.html#huespedes">Justificacion</a>
+				<input  type="text" id="huespedes" name="huespedes" placeholder="N° Huespedes" required>
+				<a class="just" target="black" title="Justificacion de numero de huespedes" href="detalles.html#huespedes">Justificacion</a>
 			</div>
 		</section>
 		<!-- inicio de servicios y tipo de habitacion -->
@@ -84,36 +84,36 @@
 
 				<div class="">
 					<h2 class="sub">Servicios <a target="black" class="just"
-							href="detalles.html#Servicios">Justificacion</a> </h2>
+						 title="Justificacion de servicios"	href="detalles.html#Servicios">Justificacion</a> </h2>
 				</div>
 
 				<div>
-					<input type="checkbox" id="aireacondicionado">
-					<label>Aire Acondicionado</label>
+					<input type="checkbox" id="aireacondicionado" aria-label="Aire Acondicionado">
+					<label for="aireacondicionado">Aire Acondicionado</label>
 					<br>
-					<input type="checkbox" id="almohadas">
-					<label>Almohadas a la carta</label>
+					<input type="checkbox" id="almohadas" aria-label="almohadas">
+					<label for="almohadas">Almohadas a la carta</label>
 					<br>
-					<input type="checkbox" id="cajafuerte">
-					<label>Caja fuerte</label>
+					<input type="checkbox" id="cajafuerte" aria-label="cajafuerte">
+					<label for="cajafuerte">Caja fuerte</label>
 					<br>
-					<input type="checkbox" id="detecdehumos">
-					<label>Detector de humos</label>
+					<input type="checkbox" id="detecdehumos" aria-label="detector de humos">
+					<label for="detecdehumos">Detector de humos</label>
 				</div>
 
 
 				<div>
-					<input type="checkbox" id="minibar">
-					<label>Mini bar</label>
+					<input type="checkbox" id="minibar" aria-label="Mini Bar">
+					<label for="minibar">Mini bar</label>
 					<br>
-					<input type="checkbox" id="mesadetrabajo">
-					<label>Mesa de trabajo</label>
+					<input type="checkbox" id="mesadetrabajo" aria-label="Mesa de trabajo">
+					<label for="mesadetrabajo">Mesa de trabajo</label>
 					<br>
-					<input type="checkbox" id="internetconexion">
-					<label>Conexion a internet</label>
+					<input type="checkbox" id="internetconexion" aria-label="Conexion a internet ethernet">
+					<label for="internetconexion">Conexion a internet ethernet</label>
 					<br>
-					<input type="checkbox" id="wifi">
-					<label>Wifi</label>
+					<input type="checkbox" id="wifi" aria-label="Wifi">
+					<label for="wifi">Wifi</label>
 				</div>
 
 
@@ -122,21 +122,21 @@
 			<section class="normal">
 				<div>
 					<h2 class="sub">Tipo de habitacion <span class="red">*</span><a target="black" class="just"
-							href="detalles.html#tiphabitacion">Justificacion</a> </h2>
+						title="justificacion de tipo de habitacion"	href="detalles.html#tiphabitacion">Justificacion</a> </h2>
 				</div>
 				<div>
-					<input type="checkbox" id="individual">
-					<label>Individual</label>
+					<input type="checkbox" id="individual" aria-label="Individual">
+					<label for="individual">Individual</label>
 				</div>
 				<div>
-					<input type="checkbox" id="doble">
-					<label>Doble</label>
+					<input type="checkbox" id="doble" aria-label="Doble">
+					<label for="doble">Doble</label>
 				</div>
-				<div><input type="checkbox" id="suite">
-					<label>Suite</label>
+				<div><input type="checkbox" id="suite" aria-label="Suite">
+					<label for="suite">Suite</label>
 				</div>
-				<div><input type="checkbox" id="penthouse">
-					<label>Penthouse</label>
+				<div><input type="checkbox" id="penthouse" aria-label="Penthouse">
+					<label for="penthouse">Penthouse</label>
 				</div>
 
 			</section>
@@ -145,29 +145,29 @@
 		<section class="bg-card normal ">
 			<div>
 				<h2 class="sub">Pension <span class="red">*</span><a target="black" class="just"
-						href="detalles.html#Pension">Justificacion</a></h2>
+					title="Justificacion de pension"	href="detalles.html#Pension">Justificacion</a></h2>
 			</div>
 
 			<div class="flex">
 				<div>
-					<input type="checkbox" id="alojamiento">
-					<label>Alojamiento</label>
+					<input type="checkbox" id="alojamiento" aria-label="alojamiento">
+					<label for="alojamiento">Alojamiento</label>
 				</div>
 
 				<div>
-					<input type="checkbox" id="desayuno">
-					<label>Desayuno</label>
+					<input type="checkbox" id="desayuno" aria-label="desayuno">
+					<label for="desayuno">Desayuno</label>
 				</div>
 
 
 				<div>
-					<input type="checkbox" id="media">
-					<label>Media</label>
+					<input type="checkbox" id="media" aria-label="media">
+					<label for="media">Media</label>
 				</div>
 
 				<div>
-					<input type="checkbox" id="completa">
-					<label>Completa</label>
+					<input type="checkbox" id="completa" aria-label="completa">
+					<label for="completa">Completa</label>
 				</div>
 			</div>
 			<!-- seccion de sugerencias y correo -->
@@ -175,7 +175,7 @@
 
 		<div class="bg-card normal">
 			<section>
-				<h2>Comentarios o sugerencias <a target="black" class="just"
+				<h2>Comentarios o sugerencias <a target="black" class="just" title="justificacion de comentarios y sugerencias"
 						href="detalles.html#comentsugere">Justificacion</a></h2>
 				<textarea id="comentarios" name="comment" rows=5 cols=40>
 			</textarea>
@@ -186,23 +186,23 @@
 					<h2>Contacto</h2>
 				</div>
 				<div>
-					<label>E-mail: </label>
+					<label for="correo">E-mail: </label>
 					<input class="inpu" type="text" id="correo">
-					<a target="black" class="just" href="detalles.html#correo">Justificacion</a>
+					<a target="black" class="just" title="justificacion de E-mail" href="detalles.html#correo">Justificacion</a>
 				</div>
 
 				<div>
 					<input type="checkbox" id="politicas" required>
-					<label>Acepto la politica de privacidad <span class="red">*</span></label>
-					<a target="black" class="just" href="detalles.html#politicas">Justificacion</a>
+					<label for="politicas">Acepto la politica de privacidad <span class="red">*</span></label>
+					<a target="black" class="just" title="justificacion politicas de privacidad" href="detalles.html#politicas">Justificacion</a>
 				</div>
 
 				<div>
 					<input type="submit" class="btn" id="Enviar" value="Enviar">
-					<a target="black" class="just" href="detalles.html#Enviar">Justificacion</a>
+					<a target="black" class="just" title="justificacion Enviar" href="detalles.html#Enviar">Justificacion</a>
 
 					<input type="button" class="btn2" id="limpiar" value="Limpiar">
-					<a target="black" class="just" href="detalles.html#limpiar">Justificacion</a>
+					<a target="black" class="just" title="justificacion eliminar" href="detalles.html#limpiar">Justificacion</a>
 				</div>
 
 			</section>
